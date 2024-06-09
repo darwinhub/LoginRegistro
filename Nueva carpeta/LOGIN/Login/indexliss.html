@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- LINK CSS -->
+   <link rel="stylesheet" href="css/styleliss.css">
+   <script src="js/js.js"></script>
+
+   <!-- LINK ICONOS -->
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+   <title>Login & Regitro</title>
+</head>
+<body>
+<!-- NAVEGACIÓN -->
+   <header class="header">
+    <nav class="nav"> 
+      <a href="#" class="nav_logo">LogoTipo</a>
+
+      <ul class="nav_items"> 
+        <li class="nav_item">
+         <a href="#" class="nav_link">Inicio</a> <!--Copiar el link 3 veces-->
+         <a href="#" class="nav_link">Productos</a>
+         <a href="#" class="nav_link">Servicios</a>
+         <a href="#" class="nav_link">Contactos</a>
+        </li>
+      </ul>
+
+      <button class="button" id="form-open">Login</button>
+    </nav>
+   </header>
+
+   <!-- HOME -->
+   <section class="home">
+    <div class="form_container">  
+      <i class="uil uil-times form_close"></i> 
+      <!-- LOGIN -->
+      <div class="form login_form">  
+        <form action="#">
+            <h2>Login</h2>
+            <div class="input_box">
+               <input type="email" placeholder="Ingresa tu email" required />
+               <i class="uil uil-envelope-alt email"></i>                </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Ingresa tu cotraseña" required />  <!-- Inserta el icono de pass y además poner encriptado el campo--> 
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+         <div class="option_field">    
+            <span class="checkbox">
+            <input type="checkbox" id="check" />            <label for="check">Recordarme</label>
+           </span>
+           <a href="#" class="forgot_pw">¿Olvidaste tu contraseña?</a>
+         </div>
+
+         <button class="button">Iniciar Sesión</button>   
+         <div class="login_signup">¿No tienes una cuenta? <a href="#" id="signup">Registrarse</a></div>   
+        </form>
+      </div>
+
+      <!-- REGISTRO -->
+      <div class="form signup_form">   
+        <form action="#">
+         <h2>Registro</h2>
+
+<!-- COPIAMOS LOS DIV DEL FORMULARIO DE LOGIN (EMAIL Y PASS)--> 
+
+         <div class="input_box">
+           <input type="email" placeholder="Ingresa tu email" required />
+           <i class="uil uil-envelope-alt email"></i>                   </i>  <!-- i es el código para insertar el icono--> 
+         </div>
+         <div class="input_box">
+           <input type="password" placeholder="Ingresa tu contraseña" required />
+           <i class="uil uil-lock password"></i>
+           <i class="uil uil-eye-slash pw_hide"></i>
+         </div>
+         <div class="input_box">
+           <input type="password" placeholder="Confirmar contraseña" required />  <!-- REPETIMOS UN DIV DEL PASS PARA PONER REPETIR CONTRASEÑA --> 
+           <i class="uil uil-lock password"></i>
+           <i class="uil uil-eye-slash pw_hide"></i>
+         </div>
+
+         <button class="button">Registrarse</button>
+
+         <div class="login_signup">¿Tienes una cuenta? <a href="#" id="login">Login</a></div>
+        </form>
+      </div>
+     </div>
+   </section>
+
+   
+</body>
+</html>

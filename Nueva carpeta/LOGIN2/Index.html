@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login-registro</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>LogoTipo</h1>
+        <nav>
+          <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Productos</a></li>
+            <li><a href="">Servicios</a></li>
+            <li><a href="">Contactos</a></li>
+          </ul>
+          <button id="login_btn">Login</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="form-container" id="form-container">
+        <form id="login-form" class="form">
+          <h2>Login</h2>
+          <label for="login_email">Ingresa tu email</label>
+          <input type="email" id="login_email" required />
+
+          <label for="login_password">Ingresa tu contraseña</label>
+          <input type="password" id="login_password" required />
+
+          <button type="submit">Iniciar sesión</button>
+          <p>
+            ¿No tienes una cuenta?<a href="" id="show_register">Registrarte</a>
+          </p>
+        </form>
+        <form id="register_form" class="form hidden">
+          <h2>Registro</h2>
+          <label for="register_email">Ingresa tu email</label>
+          <input type="email" id="registre_email" required />
+
+          <label for="register_password">Crea una contraseña</label>
+          <input type="password" id="register_password" required />
+
+          <button type="submit">Registrarse</button>
+          <p>
+            ¿ya tienes una cuenta?<a href="" id="show_login">Inicia sesión</a>
+          </p>
+        </form>
+      </div>
+    </main>
+    <script src="./js.js"></script>
+  </body>
+</html>
